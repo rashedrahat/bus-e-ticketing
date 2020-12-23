@@ -1,1 +1,281 @@
-{}
+{
+  "districts": {
+    "Barisal": [
+      "Barguna",
+      "Barisal",
+      "Bhola",
+      "Jhalokati",
+      "Patuakhali",
+      "Pirojpur"
+    ],
+    "Chittagong": [
+      "Bandarban",
+      "Brahmanbaria",
+      "Chandpur",
+      "Chittagong",
+      "Comilla",
+      "Cox's Bazar",
+      "Feni",
+      "Khagrachhari",
+      "Lakshmipur",
+      "Noakhali",
+      "Rangamati"
+    ],
+    "Dhaka": [
+      "Dhaka",
+      "Faridpur",
+      "Gazipur",
+      "Gopalganj",
+      "Kishoreganj",
+      "Madaripur",
+      "Manikganj",
+      "Munshiganj",
+      "Narayanganj",
+      "Narsingdi",
+      "Rajbari",
+      "Shariatpur",
+      "Tangail"
+    ],
+    "Khulna": [
+      "Bagerhat",
+      "Chuadanga",
+      "Jessore",
+      "Jhenaidah",
+      "Khulna",
+      "Kushtia",
+      "Magura",
+      "Meherpur",
+      "Narail",
+      "Satkhira"
+    ],
+    "Mymensingh": [
+      "Jamalpur",
+      "Mymensingh",
+      "Netrakona",
+      "Sherpur"
+    ],
+    "Rajshahi": [
+      "Bogra",
+      "Chapainawabganj",
+      "Joypurhat",
+      "Naogaon",
+      "Natore",
+      "Pabna",
+      "Rajshahi",
+      "Sirajganj"
+    ],
+    "Rangpur": [
+      "Dinajpur",
+      "Gaibandha",
+      "Kurigram",
+      "Lalmonirhat",
+      "Nilphamari",
+      "Panchagarh",
+      "Rangpur",
+      "Thakurgaon"
+    ],
+    "Sylhet": [
+      "Habiganj",
+      "Moulvibazar",
+      "Sunamganj",
+      "Sylhet"
+    ]
+  },
+  "buses": [
+    {
+      "id": "ABC-123",
+      "name": "Ekushe",
+      "route": {
+        "startingPoint": "Noakhali",
+        "endPoint": "Dhaka"
+      },
+      "seats": 40,
+      "departureTime": "11:00 AM",
+      "arrivalTime": "5:00 PM",
+      "price": 350
+    },
+    {
+      "id": "XYZ-123",
+      "name": "Ekushe-AC",
+      "route": {
+        "startingPoint": "Noakhali",
+        "endPoint": "Dhaka"
+      },
+      "seats": 40,
+      "departureTime": "12:00 PM",
+      "arrivalTime": "4:30 PM",
+      "price": 450
+    },
+    {
+      "id": "H-123",
+      "name": "Himachol",
+      "route": {
+        "startingPoint": "Noakhali",
+        "endPoint": "Dhaka"
+      },
+      "seats": 40,
+      "departureTime": "8:00 AM",
+      "arrivalTime": "1:30 PM",
+      "price": 330
+    },
+    {
+      "id": "D-123",
+      "name": "Dhaka Express",
+      "route": {
+        "startingPoint": "Dhaka",
+        "endPoint": "Comilla"
+      },
+      "seats": 40,
+      "departureTime": "8:00 AM",
+      "arrivalTime": "11:00 AM",
+      "price": 200
+    },
+    {
+      "id": "H-123-H",
+      "name": "Hanif",
+      "route": {
+        "startingPoint": "Dhaka",
+        "endPoint": "Chittagong"
+      },
+      "seats": 40,
+      "departureTime": "8:00 AM",
+      "arrivalTime": "1:00 PM",
+      "price": 500
+    },
+    {
+      "id": "E-123-E",
+      "name": "Ena",
+      "route": {
+        "startingPoint": "Dhaka",
+        "endPoint": "Cox's Bazar"
+      },
+      "seats": 40,
+      "departureTime": "8:00 AM",
+      "arrivalTime": "3:00 PM",
+      "price": 1000
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "journeyDate": "12/23/2020",
+      "returnDate": null,
+      "busId": "ABC-123",
+      "seats": [
+        "A-1",
+        "A-2",
+        "A-3",
+        "A-4",
+        "B-1",
+        "B-2",
+        "B-3",
+        "B-4",
+        "C-1",
+        "C-2",
+        "C-3",
+        "C-4",
+        "D-1",
+        "D-2",
+        "D-3",
+        "D-4",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "F-1",
+        "F-2",
+        "F-3",
+        "F-4",
+        "G-1",
+        "G-2",
+        "G-3",
+        "G-4",
+        "H-1",
+        "H-2",
+        "H-3",
+        "H-4",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "J-1",
+        "J-2",
+        "J-3",
+        "J-4"
+      ],
+      "blocked": [],
+      "booked": [
+        "A-2",
+        "B-3"
+      ],
+      "available": [
+        "A-1",
+        "A-3",
+        "A-4",
+        "B-1",
+        "B-2",
+        "B-4",
+        "C-1",
+        "C-3",
+        "C-4",
+        "D-1",
+        "D-2",
+        "D-3",
+        "D-4",
+        "E-1",
+        "E-2",
+        "E-3",
+        "E-4",
+        "F-1",
+        "F-2",
+        "F-3",
+        "F-4",
+        "G-1",
+        "G-2",
+        "G-3",
+        "G-4",
+        "H-1",
+        "H-2",
+        "H-3",
+        "H-4",
+        "I-1",
+        "I-2",
+        "I-3",
+        "I-4",
+        "J-1",
+        "J-2",
+        "J-3",
+        "J-4"
+      ],
+      "selected": [],
+      "sold": [
+        "C-2"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Rashed",
+      "email": null,
+      "gender": "Male"
+    },
+    {
+      "id": 2,
+      "name": "Ayesha",
+      "email": null,
+      "gender": "Female"
+    }
+  ],
+  "goingOnJourney": [
+    {
+      "id": 1,
+      "tripId": 1,
+      "userId": 2,
+      "info": {
+        "grandTotal": 370,
+        "seat": "C-2"
+      }
+    }
+  ]
+}
