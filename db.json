@@ -158,8 +158,8 @@
   "trips": [
     {
       "id": 1,
-      "journeyDate": "12/23/2020",
-      "returnDate": null,
+      "journeyDate": "2020-12-24",
+      "returnDate": "",
       "busId": "ABC-123",
       "seats": [
         "A-1",
@@ -205,8 +205,14 @@
       ],
       "blocked": [],
       "booked": [
-        "A-2",
-        "B-3"
+        {
+          "seat": "A-2",
+          "at": "3:00 PM"
+        },
+        {
+          "seat": "B-3",
+          "at": "4:00 PM"
+        }
       ],
       "available": [
         "A-1",
@@ -247,7 +253,6 @@
         "J-3",
         "J-4"
       ],
-      "selected": [],
       "sold": [
         "C-2"
       ]
