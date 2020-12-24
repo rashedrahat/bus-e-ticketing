@@ -11,7 +11,7 @@ class Buses extends React.Component {
 
     render() {
         // @ts-ignore
-        const {searchedBuses, maidenSearch, options, secretInfo} = this.props
+        const {searchedBuses, maidenSearch, secretInfo} = this.props
         // console.log(secretInfo)
         return (
             <div className="mt-5">
@@ -92,6 +92,6 @@ class Buses extends React.Component {
         );
     }
 
-};
+}
 
 export default Buses;

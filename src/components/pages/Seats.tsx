@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 // @ts-ignore
 import {Link} from "react-router-dom";
@@ -167,9 +168,9 @@ class Seats extends React.Component {
                                     <div className="row">
                                         {
                                             // @ts-ignore
-                                            seats.length > 0 && seats.map((seat, index) => {
-                                                let color = null;
-                                                let cursor = null;
+                                            seats.length > 0 && seats.map((seat) => {
+                                                let color;
+                                                let cursor;
                                                 switch (seat.status) {
                                                     case "booked":
                                                         color = "#ff00e5"
@@ -251,7 +252,7 @@ class Seats extends React.Component {
         );
     }
 
-};
+}
 
 // @ts-ignore
 export default withSnackbar(Seats)
