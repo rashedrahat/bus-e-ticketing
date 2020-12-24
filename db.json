@@ -162,46 +162,166 @@
       "returnDate": "",
       "busId": "ABC-123",
       "seats": [
-        "A-1",
-        "A-2",
-        "A-3",
-        "A-4",
-        "B-1",
-        "B-2",
-        "B-3",
-        "B-4",
-        "C-1",
-        "C-2",
-        "C-3",
-        "C-4",
-        "D-1",
-        "D-2",
-        "D-3",
-        "D-4",
-        "E-1",
-        "E-2",
-        "E-3",
-        "E-4",
-        "F-1",
-        "F-2",
-        "F-3",
-        "F-4",
-        "G-1",
-        "G-2",
-        "G-3",
-        "G-4",
-        "H-1",
-        "H-2",
-        "H-3",
-        "H-4",
-        "I-1",
-        "I-2",
-        "I-3",
-        "I-4",
-        "J-1",
-        "J-2",
-        "J-3",
-        "J-4"
+        {
+          "id": "A-1",
+          "status": "available"
+        },
+        {
+          "id": "A-2",
+          "status": "booked"
+        },
+        {
+          "id": "A-3",
+          "status": "available"
+        },
+        {
+          "id": "A-4",
+          "status": "available"
+        },
+        {
+          "id": "B-1",
+          "status": "available"
+        },
+        {
+          "id": "B-2",
+          "status": "available"
+        },
+        {
+          "id": "B-3",
+          "status": "booked"
+        },
+        {
+          "id": "B-4",
+          "status": "available"
+        },
+        {
+          "id": "C-1",
+          "status": "available"
+        },
+        {
+          "id": "C-2",
+          "status": "sold"
+        },
+        {
+          "id": "C-3",
+          "status": "available"
+        },
+        {
+          "id": "C-4",
+          "status": "available"
+        },
+        {
+          "id": "D-1",
+          "status": "available"
+        },
+        {
+          "id": "D-2",
+          "status": "available"
+        },
+        {
+          "id": "D-3",
+          "status": "available"
+        },
+        {
+          "id": "D-4",
+          "status": "available"
+        },
+        {
+          "id": "E-1",
+          "status": "available"
+        },
+        {
+          "id": "E-2",
+          "status": "available"
+        },
+        {
+          "id": "E-3",
+          "status": "available"
+        },
+        {
+          "id": "E-4",
+          "status": "available"
+        },
+        {
+          "id": "F-1",
+          "status": "available"
+        },
+        {
+          "id": "F-2",
+          "status": "available"
+        },
+        {
+          "id": "F-3",
+          "status": "available"
+        },
+        {
+          "id": "F-4",
+          "status": "available"
+        },
+        {
+          "id": "G-1",
+          "status": "available"
+        },
+        {
+          "id": "G-2",
+          "status": "available"
+        },
+        {
+          "id": "G-3",
+          "status": "available"
+        },
+        {
+          "id": "G-4",
+          "status": "available"
+        },
+        {
+          "id": "H-1",
+          "status": "available"
+        },
+        {
+          "id": "H-2",
+          "status": "available"
+        },
+        {
+          "id": "H-3",
+          "status": "available"
+        },
+        {
+          "id": "H-4",
+          "status": "available"
+        },
+        {
+          "id": "I-1",
+          "status": "available"
+        },
+        {
+          "id": "I-2",
+          "status": "available"
+        },
+        {
+          "id": "I-3",
+          "status": "available"
+        },
+        {
+          "id": "I-4",
+          "status": "available"
+        },
+        {
+          "id": "J-1",
+          "status": "available"
+        },
+        {
+          "id": "J-2",
+          "status": "available"
+        },
+        {
+          "id": "J-3",
+          "status": "available"
+        },
+        {
+          "id": "J-4",
+          "status": "available"
+        }
       ],
       "blocked": [],
       "booked": [
@@ -213,48 +333,185 @@
           "seat": "B-3",
           "at": "4:00 PM"
         }
+      ]
+    },
+    {
+      "id": 2,
+      "journeyDate": "2020-12-24",
+      "returnDate": "",
+      "busId": "XYZ-123",
+      "seats": [
+        {
+          "id": "A-1",
+          "status": "available"
+        },
+        {
+          "id": "A-2",
+          "status": "booked"
+        },
+        {
+          "id": "A-3",
+          "status": "available"
+        },
+        {
+          "id": "A-4",
+          "status": "available"
+        },
+        {
+          "id": "B-1",
+          "status": "available"
+        },
+        {
+          "id": "B-2",
+          "status": "available"
+        },
+        {
+          "id": "B-3",
+          "status": "booked"
+        },
+        {
+          "id": "B-4",
+          "status": "available"
+        },
+        {
+          "id": "C-1",
+          "status": "available"
+        },
+        {
+          "id": "C-2",
+          "status": "sold"
+        },
+        {
+          "id": "C-3",
+          "status": "available"
+        },
+        {
+          "id": "C-4",
+          "status": "available"
+        },
+        {
+          "id": "D-1",
+          "status": "available"
+        },
+        {
+          "id": "D-2",
+          "status": "available"
+        },
+        {
+          "id": "D-3",
+          "status": "available"
+        },
+        {
+          "id": "D-4",
+          "status": "available"
+        },
+        {
+          "id": "E-1",
+          "status": "available"
+        },
+        {
+          "id": "E-2",
+          "status": "available"
+        },
+        {
+          "id": "E-3",
+          "status": "available"
+        },
+        {
+          "id": "E-4",
+          "status": "available"
+        },
+        {
+          "id": "F-1",
+          "status": "available"
+        },
+        {
+          "id": "F-2",
+          "status": "available"
+        },
+        {
+          "id": "F-3",
+          "status": "available"
+        },
+        {
+          "id": "F-4",
+          "status": "available"
+        },
+        {
+          "id": "G-1",
+          "status": "available"
+        },
+        {
+          "id": "G-2",
+          "status": "available"
+        },
+        {
+          "id": "G-3",
+          "status": "available"
+        },
+        {
+          "id": "G-4",
+          "status": "available"
+        },
+        {
+          "id": "H-1",
+          "status": "available"
+        },
+        {
+          "id": "H-2",
+          "status": "available"
+        },
+        {
+          "id": "H-3",
+          "status": "available"
+        },
+        {
+          "id": "H-4",
+          "status": "available"
+        },
+        {
+          "id": "I-1",
+          "status": "available"
+        },
+        {
+          "id": "I-2",
+          "status": "available"
+        },
+        {
+          "id": "I-3",
+          "status": "available"
+        },
+        {
+          "id": "I-4",
+          "status": "available"
+        },
+        {
+          "id": "J-1",
+          "status": "available"
+        },
+        {
+          "id": "J-2",
+          "status": "available"
+        },
+        {
+          "id": "J-3",
+          "status": "available"
+        },
+        {
+          "id": "J-4",
+          "status": "available"
+        }
       ],
-      "available": [
-        "A-1",
-        "A-3",
-        "A-4",
-        "B-1",
-        "B-2",
-        "B-4",
-        "C-1",
-        "C-3",
-        "C-4",
-        "D-1",
-        "D-2",
-        "D-3",
-        "D-4",
-        "E-1",
-        "E-2",
-        "E-3",
-        "E-4",
-        "F-1",
-        "F-2",
-        "F-3",
-        "F-4",
-        "G-1",
-        "G-2",
-        "G-3",
-        "G-4",
-        "H-1",
-        "H-2",
-        "H-3",
-        "H-4",
-        "I-1",
-        "I-2",
-        "I-3",
-        "I-4",
-        "J-1",
-        "J-2",
-        "J-3",
-        "J-4"
-      ],
-      "sold": [
-        "C-2"
+      "blocked": [],
+      "booked": [
+        {
+          "seat": "A-2",
+          "at": "3:00 PM"
+        },
+        {
+          "seat": "B-3",
+          "at": "4:00 PM"
+        }
       ]
     }
   ],

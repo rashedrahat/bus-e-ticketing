@@ -15,7 +15,8 @@ class Home extends React.Component {
                 returnDate: ''
             },
             searchedBuses: [],
-            maidenSearch: false
+            maidenSearch: false,
+            seatsAvailability: []
         };
     }
 
@@ -84,10 +85,31 @@ class Home extends React.Component {
         axios.get(reqURL).then(response => {
             console.log(response);
             if (response.status === 200) {
-                // console.log(response.data)
+                console.log(response.data)
                 const trips = response.data
                 if (trips.length > 0) {
-                    this.fetchBuses(trips)
+                    // @ts-ignore
+                    let seatsAvailability = []
+                    // @ts-ignore
+                    trips.map(element => {
+                        // @ts-ignore
+                        let numOfSeatsAvailable = 0
+                        // @ts-ignore
+                        element.seats.map(seat => {
+                            if (seat.status === "available") {
+                                numOfSeatsAvailable = numOfSeatsAvailable + 1
+                            }
+                        })
+                        seatsAvailability.push({
+                            busId: element.busId,
+                            seatsAvailable: numOfSeatsAvailable,
+                            tripId: element.id
+                        })
+                    })
+                    // @ts-ignore
+                    this.setState({seatsAvailability}, () => {
+                        this.fetchBuses(trips)
+                    })
                 } else {
                     console.log('search result trips []')
                     // search result []
@@ -160,7 +182,7 @@ class Home extends React.Component {
 
     render() {
         // @ts-ignore
-        const {districts, data_to_qp, searchedBuses, maidenSearch} = this.state
+        const {districts, data_to_qp, searchedBuses, maidenSearch, seatsAvailability} = this.state
         return (
             <div className="container">
                 <div className="mt-5 p-5" style={{border: '5px solid #0D78F9'}}>
@@ -212,7 +234,7 @@ class Home extends React.Component {
                 </div>
                 <Buses
                     // @ts-ignore
-                    searchedBuses={searchedBuses} maidenSearch={maidenSearch} options={data_to_qp}/>
+                    searchedBuses={searchedBuses} maidenSearch={maidenSearch} options={data_to_qp} secretInfo={seatsAvailability}/>
             </div>
         );
     }
